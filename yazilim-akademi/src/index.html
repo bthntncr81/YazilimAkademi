@@ -9,5 +9,41 @@
 </head>
 <body>
   <app-root></app-root>
+      <!-- bootstrap -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+
+      <script src="js/tiny-slider.js"></script>
+  
+      <script src="js/swiper.min.js"></script>
+  
+      <!-- counter -->
+      <script src="js/counter.init.js"></script>
+  
+      <!-- Custom -->
+      <script src="js/app.js"></script>
+  
+  
+      <script>
+  
+          (function () {
+              // Add event listener
+              document.addEventListener("mousemove", parallax);
+              const elem = document.querySelector("#ani-home");
+              // Magic happens here
+              function parallax(e) {
+                  let _w = window.innerWidth / 2;
+                  let _h = window.innerHeight / 2;
+                  let _mouseX = e.clientX;
+                  let _mouseY = e.clientY;
+                  let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+                  let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+                  let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+                  let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+                  elem.style.backgroundPosition = x;
+              }
+  
+          })();
+  
+      </script>
 </body>
 </html>

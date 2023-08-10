@@ -611,7 +611,7 @@ hr {
   font-weight: 600;
 }
 .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:active, .navbar .navbar-nav .nav-link.active {
-  color: #20ad96;
+  opacity: 0.5;
 }
 .navbar .navbar-toggler {
   padding: 0px;
@@ -921,7 +921,6 @@ textarea.form-control {
   }
 }
 .typewrite > .wrap {
-  border-right: 0.08em solid #000000 !important;
 }
 
 .home-2 .card {
@@ -1037,10 +1036,10 @@ textarea.form-control {
 }
 
 .bg-home6 {
-  min-height: 100vh;
+  min-height: 50vh;
   align-items: center;
   display: flex;
-  background-color: rgba(32, 173, 150, 0.5);
+  background-color: #dd1d168b;
 }
 
 #ani-home {
